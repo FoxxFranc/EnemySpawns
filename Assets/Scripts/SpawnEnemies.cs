@@ -23,8 +23,7 @@ public class SpawnEnemies : MonoBehaviour
     }
 
     private IEnumerator SpawnUnits()
-    {
-        
+    {   
         for (int i = 0; i < _points.Length; i++)
         {
             Instantiate(_template, _points[i].position, Quaternion.identity);
